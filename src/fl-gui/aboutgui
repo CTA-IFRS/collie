@@ -1,0 +1,21 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0308
+header_name {.hpp}
+code_name {.cpp}
+widget_class FluidAboutWindow {
+  label Sobre open
+  xywh {1051 389 310 238} type Double
+  class Fl_Window visible
+} {
+  Fl_Box logoBox_ {
+    protected image {../../imgs/logo_small.png} xywh {25 10 260 100}
+  }
+  Fl_Box {} {
+    label {Desenvolvido no Centro Tecnológico de Acessibilidade do IFRS}
+    xywh {15 105 280 65} align 128
+  }
+  Fl_Box {} {
+    label {Versão 1.0-alpha} selected
+    xywh {15 160 280 65} align 128
+  }
+}

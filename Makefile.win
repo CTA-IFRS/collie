@@ -1,0 +1,47 @@
+
+# FLTK_PATH = "%HOMEPATH%\libs\fltk"
+# OPENCV_PATH = "%HOMEPATH%\libs\opencv\build"
+
+WIN_LIBS = user32.lib shell32.lib kernel32.lib gdi32.lib advapi32.lib ole32.lib comdlg32.lib fltk.lib opencv_world470.lib
+APP_FOLDER = collie_app
+APP = collie.exe
+CPPFLAGS = /MD /std:c++17 /EHsc /W2 /O2 /D WIN32 /Fobuild\  \
+           /I src /I src\effects /I src\platform \
+           /I "$(FLTK_PATH)\include" /I "$(OPENCV_PATH)\include"
+
+all:
+    @ make.bat
+
+exe: 
+    link build\*.obj $(WIN_LIBS) /nodefaultlib:msvcrtd /subsystem:windows \
+    /libpath:"$(FLTK_PATH)\lib" /libpath:"$(OPENCV_PATH)\x64\vc16\lib" \
+    /out:$(APP)
+    copy "$(OPENCV_PATH)\x64\vc16\bin\opencv_world470.dll" .
+
+app: all
+    if not exist $(APP_FOLDER) mkdir $(APP_FOLDER)
+    copy $(APP) $(APP_FOLDER)
+    copy "$(OPENCV_PATH)\x64\vc16\bin\opencv_world470.dll" $(APP_FOLDER)
+
+{src}.cpp{build}.obj:
+    @ if not exist build mkdir build
+    cl $< /c $(CPPFLAGS)
+
+{src\platform}.cpp{build}.obj:
+    @ if not exist build mkdir build
+    cl $< /c $(CPPFLAGS)
+
+{src\effects}.cpp{build}.obj:
+    @ if not exist build mkdir build
+    cl $< /c $(CPPFLAGS)
+
+{src\fl-gui}.cpp{build}.obj:
+    @ if not exist build mkdir build
+    cl $< /c $(CPPFLAGS)
+
+clean:
+    @ if exist build rmdir /s /q build
+    @ if exist $(APP) del $(APP)
+    @ if exist "$(APP_FOLDER)" rmdir /s /q "$(APP_FOLDER)"
+
+
