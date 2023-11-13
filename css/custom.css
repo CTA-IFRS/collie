@@ -1,0 +1,125 @@
+:root {
+    --ciano10: #effcfd;
+    --ciano50: #E0F7FA;
+    --primary: #026E81;
+    --secondary: #00ABBD;
+    --tertiary: #72F2EB;
+    --success: #0099DD;
+    --info: #54B4D3;
+    --warning: #FF9933;
+    --danger: #E3371E;
+    --ciano100: #B2EBF2;
+    --ciano200: #80DEEA;
+    --ciano300: #4DD0E1;
+    --ciano400: #26C6DA;
+    --ciano500: #00BCD4;
+    --ciano600: #00ACC1;
+    --ciano700: #0097A7;
+    --ciano800: #00838F;
+    --ciano900: #006064;
+    --cianoA1: #84FFFF;
+    --cianoA2: #18FFFF;
+    --cianoA3: #00E5FF;
+    --cianoA4: #00E5FF;
+    --cianoA5: #00B8D4;
+    --white: #ffffff;
+}
+
+
+/* sobrescrevendo classes padrão do Bootstrap */
+
+
+/* a marcação dá um peso maior a regra, sobrescrevendo regras prévias */
+
+.bg-white,
+.btn-white {
+    background-color: var(--white);
+}
+
+.bg-ciano10,
+.btn-ciano10 {
+    background-color: var(--ciano10);
+}
+
+.bg-ciano50,
+.btn-ciano50 {
+    background-color: var(--ciano50);
+}
+
+.bg-ciano100,
+.btn-ciano100 {
+    background-color: var(--ciano100);
+}
+
+.bg-ciano200,
+.btn-ciano200 {
+    background-color: var(--ciano200);
+}
+
+.bg-ciano300,
+.btn-ciano300 {
+    background-color: var(--ciano300);
+}
+
+.bg-ciano400,
+.btn-ciano400 {
+    background-color: var(--ciano400);
+}
+
+.bg-ciano500,
+.btn-ciano500 {
+    background-color: var(--ciano500);
+}
+
+.bg-ciano600,
+.btn-ciano600 {
+    background-color: var(--ciano600);
+}
+
+.bg-ciano700,
+.btn-ciano700 {
+    background-color: var(--ciano700);
+}
+
+.bg-ciano800,
+.btn-ciano800 {
+    background-color: var(--ciano800);
+}
+
+.bg-ciano900,
+.btn-ciano900 {
+    background-color: var(--ciano900);
+}
+
+.bg-cianoA1,
+.btn-cianoA1 {
+    background-color: var(--cianoA1);
+}
+
+.bg-cianoA2,
+.btn-cianoA2 {
+    background-color: var(--cianoA2);
+}
+
+.bg-cianoA3,
+.btn-cianoA3 {
+    background-color: var(--cianoA3);
+}
+
+.bg-cianoA4,
+.btn-cianoA4 {
+    background-color: var(--cianoA4);
+}
+
+.bg-cianoA5,
+.btn-cianoA5 {
+    background-color: var(--cianoA5);
+}
+
+.nav-link {
+    color: var(--primary);
+}
+
+.nav-link:hover {
+    color: var(--warning);
+}

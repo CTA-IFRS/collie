@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Collie</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Collie é uma ferramenta para simulação de daltonismo desenvolvida pelo Centro Tecnológico de Acessibilidade do IFRS">
+    <link href="img/collie.png" rel="shortcut icon" type="image/x-icon" alt="logotipo do collie" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/high_contrast.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Fonte Montserrat -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Barra de acessibilidade -->
+    <nav class="barra-acessibilidade navbar navbar-expand-sm navbar-dark" aria-label="Menu de acessibilidade">
+        <button type="button" class="navbar-toggler bg-dark" data-toggle="collapse" data-target="#menuAcessibilidade" aria-controls="menuAcessibilidade" aria-expanded="false" aria-label="Expandir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menuAcessibilidade" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark py-0" href="#conteudo-principal" accesskey="1"><small>Ir para o conteúdo
+                        <span class="badge badge-dark">1</span></small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark py-0" href="#menu-principal" accesskey="2"><small>Ir para o menu
+                        <span class="badge badge-dark">2</span></small>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li class="nav-item my-2 my-md-0">
+                    <a class="nav-link text-dark py-0" id="high_contrast" aria-checked="false" href=""><small><i class="bi bi-circle-half">&nbsp;</i> Alto contraste</small></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu principal -->
+    <a href="#menu-principal" id="menu-principal" class="sr-only">Início do menu principal</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-ciano50 menu-principal">
+        <div class="container py-1">
+            <a class="navbar-brand" id="beluga" href=""><img src="img/collie.png" height="80px" alt="logotipo do Collie"> Collie</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#manuals">Manuais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="#contribute">Contribua</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-4" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a href="#conteudo-principal" id="conteudo-principal" class="sr-only">Início do conteúdo</a>
+
+    <div class="container py-5 border-bottom" id="main">
+        <div class="row gx-5 align-items-center pb-5">
+            <div class="col-md-6 aos-init aos-animate" data-aos="fade-up">
+                <h1 class="display-4 mb-3 font-weight-bold"><strong>Ferramenta para simulação de daltonismo</strong></h1>
+                <p class="page-header-ui-text mb-5 pr-4">O aplicativo Collie é uma ferramenta de simulação que permite capturar e visualizar a tela do seu computador como uma pessoa com daltonismo.
+                </p>
+                <div class="d-flex flex-column flex-sm-row">
+                    <a class="btn btn-ciano800  text-white fw-500 py-2 px-4 me-sm-3 mb-3 mb-sm-0" href="https://github.com/CTA-IFRS/collie/releases/tag/v1.0-alpha">
+                        Download Collie
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-right ms-2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 d-lg-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <img class="img-fluid" src="img/smartmockups-collie.png" alt="telas com a interface do Collie">
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5" id="about">
+        <div class="row">
+            <h2 class="h1 col font-weight-bold text-center">Conheça mais sobre o Collie</h2>
+        </div>
+        <div class="row py-4">
+            <div class="col-sm-12">
+                <blockquote class="blockquote text-center text-black-50">
+                    <p>Ferramenta para simulação de daltonismo</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm-7 text-black-50">
+                <p>O Collie é uma ferramenta para simulação de daltonismo. Através dela, é possível capturar a tela do seu computador e visualizá-la como uma pessoa com daltonismo.</p>
+                <p> O aplicativo permite selecionar entre 3 tipos de daltonismo: protanopia, deuteranopia e tritanopia. É possível redimensionar a área de captura para se ajustar as necessidades 
+                    do usuário. A área capturada pode ser salva como uma imagem.
+                <p>Desenvolvido pelo Centro Técnológico de Acessibilidade do Instituto Federal de Educação, Ciências e Tecnologia do Rio Grande do Sul, disponibilizado de forma gratuita e com código fonte sob a licença GPLv3 e Creative Commons NonCommercial-ShareAlike
+                    3.0 Unported (CC BY-NC-SA 3.0)</p>
+            </div>
+            <div class="col-sm-5">
+                <img class="img-fluid mb-4 border p-1 rounded" src="img/about-1.png" alt="Printscreen da tela de captura do Collie">
+            </div>
+        </div>
+        <div class="row mt-5 pt-4 mb-5">
+            <h3 class="font-weight-bold col-sm">Principais características</h3>
+        </div>
+        <ul class="row list-unstyled">
+            <li class="media col-sm-6 float-left mb-4">
+                <img class="mr-3 border bg-ciano400" src="img/capture.png" alt="Capturar">
+                <div class="media-body">
+                    <h4 class="h6 text-uppercase font-weight-bold mt-0 mb-2">Capturar</h4>
+                    <small>O Collie permite capturar a tela do seu computador para simular os efeitos do daltonismo</small>
+                </div>
+            </li>
+            <li class="media col-sm-6 float-left mb-4">
+                <img class="mr-3 border bg-ciano400" src="img/resize.png" alt="Redimensionar">
+                <div class="media-body">
+                    <h4 class="h6 text-uppercase font-weight-bold mt-0 mb-2">Redimensionar</h4>
+                    <small>O Collie permite redimensionar a área de captura da simulação</small>
+                </div>
+            </li>
+            <li class="media col-sm-6 float-left mb-4">
+                <img class="mr-3 border bg-ciano400" src="img/simulate.png" alt="Simular">
+                <div class="media-body">
+                    <h4 class="h6 text-uppercase font-weight-bold mt-0 mb-2">Simular</h4>
+                    <small>O Collie permite simular 3 tipos de daltonismo: protanopia, deuteranopia e tritanopia</small>
+                </div>
+            </li>
+            <li class="media col-sm-6 float-left mb-4">
+                <img class="mr-3 border bg-ciano400" src="img/save.png" alt="Salvar captura">
+                <div class="media-body">
+                    <h4 class="h6 text-uppercase font-weight-bold mt-0 mb-2">Salvar captura</h4>
+                    <small>O Collie permite salvar a área capturada em uma imagem.</small>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class=" py-5 bg-ciano10" id="manuals">
+        <div class="container">
+            <div class="row">
+                <h2 class="h1 col-sm font-weight-bold text-left mt-2"><span class="sr-only">Manuais - </span>Aproveite ao máximo este aplicativo</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <p class="mt-4 text-black-50">Disponibilizamos o manual de uso para que você aprenda a usar todas as funcionalidades disponíveis no Collie. Também ensinamos a instalar em seu computador no manual de instalação.</p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="manual/index.html#section-3" class="btn btn-ciano800 text-white  col-12 mb-3 mt-2">Manual de uso</a>
+                    <a href="manual/index.html#section-2" class="btn btn-ciano800 text-white col-12">Manual de instalação</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5" id="feedback">
+        <div class="container">
+            <div class="row mt-5 pt-5">
+                <h2 class="col h1 font-weight-bold text-center">Ajude-nos a melhorar</h2>
+            </div>
+            <div class="row justify-content-center">
+                <p class="col-8 mt-3 mb-4 text-center">Seu feedback é muito importante. Envie um e-mail para nós contando sua experiência para identificarmos o que podemos melhorar, assim como, os pontos positivos.
+                </p>
+            </div>
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-sm-3 text-center">
+                    <a href="mailto:cta@ifrs.edu.br" class="btn text-white py-2 btn-ciano800  ">E-mail: cta@ifrs.edu.br</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5 bg-ciano10" id="contribute">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 class="h1 font-weight-bold">Contribua com o projeto</h2>
+                    <p class="text-black-50 pt-2 mt-4 mb-4">O projeto dessa ferramenta está hospedado no GitHub para que você, desenvolvedor ou empresa, contribua com melhorias ou correções caso encontrem algum bug.</p>
+                    <div class="gh-button">
+                        <a href="https://github.com/CTA-IFRS/collie" class="btn btn-ciano800 text-white py-2 px-5">GitHub do
+                            projeto</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/contribute.png" class="w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h2 class="font-weight-bold text-center text-sm-left">Entre em contato</h2>
+                    <p class="text-black-50 pt-2 mt-4 mb-3">Para conhecer mais sobre os trabalhos e projetos desenvolvidos pelo CTA acesse nosso site ou redes sociais disponíveis na lista abaixo.</p>
+                    <ul class="list-unstyled pl-2 pl-sm-0">
+                        <li>
+                            <a class="text-black-50" href="mailto:cta@ifrs.edu.br"><small><i class="bi bi-envelope">
+                                    </i>cta@ifrs.edu.br</small></a>
+                        </li>
+                        <li>
+                            <a class="text-black-50" href="https://cta.ifrs.edu.br"><small><i class="bi bi-cursor">
+                                    </i>cta.ifrs.edu.br</small></a>
+                        </li>
+                        <li>
+                            <a class="text-black-50" href="https://instagram.com/cta-ifrs"><small><i
+                                        class="bi bi-instagram"> </i>instagram.com/cta-ifrs</small></a>
+                        </li>
+                        <li>
+                            <a class="text-black-50" href="https://youtube.com/cta-ifrs"><small><i
+                                        class="bi bi-youtube"> </i>youtube.com/cta-ifrs</small></a>
+                        </li>
+                        <li>
+                            <a class="text-black-50" href="https://facebook.com/cta-ifrs"><small><i
+                                        class="bi bi-facebook"> </i>facebook.com/cta-ifrs</small></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-12 mt-4 pt-lg-5 pt-sm-1">
+                    <div class="row">
+                        <div class="col-8">
+                            <img class="w-100 " src="img/logo-cta.png" alt="logo CTA">
+                        </div>
+                        <div class="col-4">
+                            <img class="w-100  " src="img/logo-proen.png" alt="logo PROEN">
+                            <img class="w-100 " src="img/logo-ifrs.png" alt="logo IFRS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-ciano50" id="developed-by">
+        <div class="row d-flex justify-content-center">
+            <div class="py-4 text-center col-lg-10 col-md-9 col-sm-8 col-7" id="footer">
+                <p class="font-weight-bold p-0 m-0"><small>Desenvolvido por CTA - IFRS. Aplicativo sob a licença GPLv3 e
+                        Creative Commons NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)</small></p>
+            </div>
+        </div>
+    </div>
+
+    <a id="btn-back-to-top" href="" class="btn btn-ciano800 text-white btn-lg" role="button">
+        <i class="bi bi-arrow-up-short"></i>
+        <span class="sr-only">Voltar para o início do site</span>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- JS-Cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/high_contrast.js"></script>
+
+</body>
+
+</html>

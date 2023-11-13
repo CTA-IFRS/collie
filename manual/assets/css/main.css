@@ -1,0 +1,43 @@
+nav.barra-acessibilidade {
+    background-color: #B2EBF2;
+    padding: 0.5rem 1rem;
+}
+
+nav.barra-acessibilidade a:hover {
+    text-decoration: underline;
+}
+
+nav.barra-acessibilidade .badge.badge-dark {
+    background-color: black;
+    color: white;
+}
+
+nav.barra-acessibilidade small {
+    font-size: 80%;
+}
+
+nav.barra-acessibilidade .ml-auto {
+    margin-left: auto!important;
+}
+
+nav.barra-acessibilidade .btn-a11y {
+    box-shadow: none;
+}
+
+.imginstall {
+    width: 292px;
+    height: 618px;
+}
+
+.btn {
+    background-color: #00838F !important;
+}
+
+.btn:hover {
+    background-color: #026E81 !important;
+    box-shadow: 0 0 0.5em #9ba0a5 !important;
+}
+
+#docs-nav .nav-link:hover {
+    color: #00838F;
+}
